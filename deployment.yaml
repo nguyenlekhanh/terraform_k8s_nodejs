@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: eks_tutorial
+  name: ekstutorial
   labels:
-    app: eks_tutorial
+    app: ekstutorial
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: eks_tutorial
+      app: ekstutorial
   template:
     metadata:
       labels:
-        app: eks_tutorial
+        app: ekstutorial
     spec:
       containers:
-        - name: eks_tutorial
+        - name: ekstutorial
           image: 767397800207.dkr.ecr.us-east-1.amazonaws.com/eks_tutorial:1.1
           imagePullPolicy: Always
           ports:
