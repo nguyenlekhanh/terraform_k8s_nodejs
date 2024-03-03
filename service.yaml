@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: eksdemo
+  name: eks_tutorial
 spec:
   selector:
-    app: eksdemo
+    app: eks_tutorial
   ports:
     - protocol: TCP
       port: 80
